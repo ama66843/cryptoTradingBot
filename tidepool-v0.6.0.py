@@ -6,7 +6,7 @@ import time
 import pandas as pd
 import math
 import os
-import syslog
+#import syslog
 import robin_stocks as r
 import tideconfig as cfg
 import talib
@@ -118,7 +118,7 @@ class moneyBot:
         os.system(cmd)
         print(msg)
         # write to syslog
-        syslog.syslog(syslog.LOG_NOTICE, msg)
+        #syslog.syslog(syslog.LOG_NOTICE, msg)
 
     def getPrices(self):
         #try:
